@@ -1,0 +1,124 @@
+[
+  { "name": "Novo (sem dados)", "variables": [] },
+  {
+    "name": "Tartarugas",
+    "variables": [
+      {
+        "id": 0,
+        "name": "tamanho do casco",
+        "type": "C",
+        "nominais": null,
+        "min": 1,
+        "max": 15,
+        "decimal": 1,
+        "before": [],
+        "relation": null,
+        "relationsPercentage": null
+      },
+      {
+        "id": 1,
+        "name": "largura",
+        "type": "C",
+        "nominais": null,
+        "min": null,
+        "max": null,
+        "decimal": 1,
+        "before": [0],
+        "relation": 0,
+        "relationsPercentageUp": 5,
+        "relationsPercentageDown": 0
+      },
+      {
+        "id": 2,
+        "name": "comprimento",
+        "type": "C",
+        "nominais": null,
+        "min": null,
+        "max": null,
+        "decimal": 1,
+        "before": [0, 1],
+        "relation": 0,
+        "relationsPercentageUp": 0,
+        "relationsPercentageDown": 15
+      },
+      {
+        "id": 3,
+        "name": "idade",
+        "type": "C",
+        "nominais": null,
+        "min": 1,
+        "max": 150,
+        "decimal": 0,
+        "before": [0, 1, 2],
+        "relation": null,
+        "relationsPercentageUp": null,
+        "relationsPercentageDown": null
+      },
+      {
+        "id": 4,
+        "name": "quantidade de dentes",
+        "type": "C",
+        "nominais": null,
+        "min": 0,
+        "max": 30,
+        "decimal": 0,
+        "before": [0, 1, 2, 3],
+        "relation": null,
+        "relationsPercentageUp": null,
+        "relationsPercentageDown": null
+      },
+      {
+        "id": 5,
+        "name": "estado do casco",
+        "type": "N",
+        "nominais": ["ótimo", "bom", "razoável", "ruim", "péssimo"],
+        "min": null,
+        "max": null,
+        "decimal": null,
+        "before": [0, 1, 2, 3, 4],
+        "relation": null,
+        "relationsPercentageUp": null,
+        "relationsPercentageDown": null
+      },
+      {
+        "id": 6,
+        "name": "sexo",
+        "type": "O",
+        "nominais": ["macho", "fêmea"],
+        "min": null,
+        "max": null,
+        "decimal": null,
+        "before": [0, 1, 2, 3, 4, 5],
+        "relation": null,
+        "relationsPercentageUp": null,
+        "relationsPercentageDown": null
+      },
+      {
+        "id": 7,
+        "name": "nadadeira esquerda",
+        "type": "O",
+        "nominais": ["ótimo", "bom", "razoável", "ruim", "ausente"],
+        "min": null,
+        "max": null,
+        "decimal": null,
+        "before": [0, 1, 2, 3, 4, 5, 6],
+        "relation": null,
+        "relationsPercentageUp": null,
+        "relationsPercentageDown": null
+      },
+      {
+        "id": 8,
+        "name": "nadadeira direita",
+        "type": "O",
+        "nominais": ["ótimo", "bom", "razoável", "ruim", "ausente"],
+        "min": null,
+        "max": null,
+        "decimal": null,
+        "before": [0, 1, 2, 3, 4, 5, 6, 7],
+        "relation": null,
+        "relationsPercentageUp": null,
+        "relationsPercentageDown": null
+      }
+    ]
+  }
+]

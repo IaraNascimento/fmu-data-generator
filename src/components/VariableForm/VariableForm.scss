@@ -1,0 +1,57 @@
+.form {
+  position: relative;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  padding: 6px 12px;
+  &:nth-child(2n) {
+    background-color: rgba(230, 230, 230, 0.6);
+  }
+  &:nth-child(2n + 1) {
+    background-color: rgba(230, 230, 230, 0.2);
+  }
+  > span {
+    vertical-align: top;
+    margin-top: 8px;
+    margin-right: 8px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.label-wrap {
+  display: inline-block;
+  margin-right: 4px;
+  span {
+    display: block;
+    font-size: 12px;
+  }
+  input {
+    width: 120px;
+    &[type="number"] {
+      width: 60px;
+    }
+  }
+}
+
+.nominais {
+  display: inline-block;
+  width: 155px;
+  vertical-align: top;
+  &-inner {
+    position: relative;
+  }
+  &-erase {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.erase-btn {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}

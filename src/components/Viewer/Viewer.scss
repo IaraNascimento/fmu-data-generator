@@ -1,0 +1,14 @@
+.table {
+  width: 100%;
+  tr {
+    &:nth-child(2n) {
+      background-color: rgba(230, 230, 230, 0.6);
+    }
+    &:nth-child(2n + 1) {
+      background-color: rgba(230, 230, 230, 0.2);
+    }
+  }
+  td {
+    text-align: center;
+  }
+}
