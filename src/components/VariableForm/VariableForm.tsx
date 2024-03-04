@@ -129,13 +129,13 @@ function VariableForm(props: VariableFormProps) {
                       </select>
                     </label>
                   )}
-                {getValues().relation === null ? (
+                {!getValues().relation && getValues().relation !== 0 ? (
                   <>
                     <label className="label-wrap">
                       <span>Min:</span>
                       <input
                         type="number"
-                        {...register("min", { valueAsNumber: true, value: 0 })}
+                        {...register("min", { valueAsNumber: true })}
                       />
                     </label>
                     <label className="label-wrap">
