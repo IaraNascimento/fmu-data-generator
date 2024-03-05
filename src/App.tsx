@@ -53,8 +53,9 @@ function App() {
         quantity={quantity}
         generatedData={(generated) => setData(generated)}
       />
-      <br />
-      <Viewer data={data} />
+      <div className="viewer-wrap">
+        <Viewer data={data} />
+      </div>
     </main>
   );
 }

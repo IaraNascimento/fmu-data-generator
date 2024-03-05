@@ -1,5 +1,17 @@
+.wrap {
+  position: relative;
+}
+
 .table {
   width: 100%;
+  th {
+    vertical-align: middle;
+    height: 40px;
+    min-width: 80px;
+    background-color: rgba(80, 80, 80, 1);
+    color: white;
+    font-size: 12px;
+  }
   tr {
     &:nth-child(2n) {
       background-color: rgba(230, 230, 230, 0.6);
@@ -9,6 +21,14 @@
     }
   }
   td {
+    vertical-align: middle;
     text-align: center;
+    height: 32px;
   }
+}
+
+.btn-download {
+  display: block;
+  margin: 16px auto;
+  max-width: 200px;
 }
