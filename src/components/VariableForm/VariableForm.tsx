@@ -205,7 +205,7 @@ function VariableForm(props: VariableFormProps) {
                           autoFocus
                         />
                         <button
-                          className="nominais-erase"
+                          className="nominais-erase negative"
                           onClick={(e) => {
                             eraseThisNominal(e, index);
                           }}
@@ -226,7 +226,7 @@ function VariableForm(props: VariableFormProps) {
         }
       })()}
       <button
-        className="erase-btn"
+        className="erase-btn negative"
         onClick={(e) => {
           e.preventDefault();
           props.eraseThisVariable();

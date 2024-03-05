@@ -3,6 +3,7 @@ import Wrap from "./components/Wrap/Wrap";
 import Viewer from "./components/Viewer/Viewer";
 import { IGeneratedData, ITemplate } from "./types/types";
 import templatesPossibilits from "./datapoints/datapoints.json";
+import "./App.scss";
 
 function App() {
   const [selectedTemplate, setSelectedTemplate] = useState<ITemplate>();
@@ -14,8 +15,9 @@ function App() {
   }
 
   return (
-    <>
-      <form>
+    <main>
+      <h1 className="main-title">Crie uma base de dados!!!</h1>
+      <form className="main-form">
         <label>
           <span>Defina o modelo padrão:</span>
           <select
@@ -53,7 +55,7 @@ function App() {
       />
       <br />
       <Viewer data={data} />
-    </>
+    </main>
   );
 }
 

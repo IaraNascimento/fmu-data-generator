@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 6px;
   border-radius: 6px;
-  padding: 6px 12px;
+  padding: 6px 125px 6px 12px;
   &:nth-child(2n) {
     background-color: rgba(230, 230, 230, 0.6);
   }
@@ -36,14 +36,18 @@
 
 .nominais {
   display: inline-block;
-  width: 155px;
+  width: 180px;
   vertical-align: top;
   &-inner {
     position: relative;
+    input {
+      padding-right: 40px;
+    }
   }
   &-erase {
     display: inline-block;
     position: absolute;
+    padding: 5px 10px;
     right: 0;
     top: 0;
     z-index: 1;

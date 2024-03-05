@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import VariableForm from "../VariableForm/VariableForm";
 import { IGeneratedData, ITemplate, IVariable } from "../../types/types";
+import "./Wrap.scss";
 
 interface WrapProps {
   template?: ITemplate;
@@ -60,7 +61,7 @@ function Wrap(props: WrapProps) {
         let max: number = data.max ? data.max : 10;
         let decimal: number =
           (data.decimal as number) >= 0 ? (data.decimal as number) : 0;
-        if (data.relation !== null) {
+        if (data.relation || data.relation === 0) {
           const reference = Number(
             Object.values(generated[index])[Number(data.relation)]
           );
@@ -128,14 +129,17 @@ function Wrap(props: WrapProps) {
             />
           );
         })}
-      <br />
-      <button onClick={() => createNewVariable()}>adicionar variável</button>
-      <br />
-      {!!variables && variables.length > 0 && (
-        <button onClick={() => generateData(props.quantity, variables)}>
-          gerar dados
-        </button>
-      )}
+      <div className="btn-wrap">
+        <button onClick={() => createNewVariable()}>adicionar variável</button>
+        {!!variables && variables.length > 0 && (
+          <button
+            className="main"
+            onClick={() => generateData(props.quantity, variables)}
+          >
+            gerar dados
+          </button>
+        )}
+      </div>
     </>
   );
 }
