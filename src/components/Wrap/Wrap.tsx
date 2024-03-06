@@ -56,7 +56,7 @@ function Wrap(props: WrapProps) {
     index: number
   ): any {
     switch (data.type as unknown as string) {
-      case "C":
+      case "QT": {
         let min: number = data.min ? data.min : 0;
         let max: number = data.max ? data.max : 10;
         let decimal: number =
@@ -74,9 +74,8 @@ function Wrap(props: WrapProps) {
           max = reference + variationUp;
         }
         return (Math.random() * (max - min) + min).toFixed(decimal);
-      case "D":
-      case "O":
-      case "N": {
+      }
+      case "QN": {
         let array = data.nominais ? data.nominais : [];
         if (array.length > 0) {
           return array[Math.floor(Math.random() * array.length)];

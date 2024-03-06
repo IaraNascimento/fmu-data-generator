@@ -101,7 +101,7 @@ function VariableForm(props: VariableFormProps) {
       </label>
       {(() => {
         switch (auxType) {
-          case "C":
+          case "QT":
             return (
               <>
                 {props.variable?.before !== null &&
@@ -181,10 +181,7 @@ function VariableForm(props: VariableFormProps) {
                 </label>
               </>
             );
-
-          case "D":
-          case "O":
-          case "N":
+          case "QN":
             return (
               <>
                 <label className="label-wrap nominais">
